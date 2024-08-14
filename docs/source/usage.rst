@@ -214,7 +214,7 @@ You can also export/import your data into/from a :code:`json` file by executing 
 
 Window Configuration
 ^^^^^^^^^^^^^^^^^^^^
-- Toggle fullscreen mode using :code:`f12` (:code:`toggle_window_configuration` command)
+- Toggle fullscreen mode using :code:`f11` (:code:`toggle_window_configuration` command)
 - You can save your current window configuration `copy_window_size_config` command.
 
 Miscellaneous
