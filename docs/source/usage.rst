@@ -203,6 +203,15 @@ Synctex
 
    let g:vimtex_view_method = 'sioyek'
 
+   " Ensure that Vim starts with a server in order for the inverse search to work.
+   if empty(v:servername) && exists('*remote_startserver')
+     call remote_startserver('VIM')
+   endif
+
+- Here is how to configure the synctex inverse search command for VIM using the VimTeX plugin::
+
+   inverse_search_command vim -v --not-a-term -T dumb -c "VimtexInverseSearch %2 '%1'"
+
 
 Data and Synchronization
 ^^^^^^^^^^^^^^^^^^^^^^^^
